@@ -1,0 +1,13 @@
+div.login_container {
+    width: 100vw;
+    height: calc(100vh - 60px);
+}
+
+div.login_overlay {
+    width: 400px;
+}
+
+div.image_holder img {
+    width: 150px;
+    height: 150px;
+}

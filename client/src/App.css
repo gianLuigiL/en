@@ -1,0 +1,17 @@
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows:  auto 1fr;
+  padding: 0px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.App div.row {
+  width: 100%;
+  overflow: hidden;
+} 
+
+main {
+  background: grey;
+}

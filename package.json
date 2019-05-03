@@ -1,31 +1,32 @@
 {
   "name": "moveto",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
-  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "api": "nodemon server.js",
+    "client": "cd client && npm run start",
+    "start": "cross-env NODE_ENV=development concurrently \"npm run api\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.11"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cross-env": "^5.2.0",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "html-entities": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.1",
+    "mysql": "^2.17.1",
+    "node-fetch": "^2.4.1"
   }
 }
